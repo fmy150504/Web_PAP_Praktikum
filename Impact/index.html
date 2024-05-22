@@ -592,19 +592,19 @@
   <!-- Vendor JS Files -->
   <script>
     function toggleDropdown() {
-      const dropdown = document.querySelector('.dropdown-menu');
-      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+      dropdownMenu.classList.toggle('show');
     }
 
   // Close the dropdown if clicked outside
-  window.onclick = function(event) {
-    if (!event.target.matches('.fixed-icon, .fixed-icon *')) {
-      const dropdown = document.querySelector('.dropdown-menu');
-      if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
-      }
-    }
-  }
+  // window.onclick = function(event) {
+  //   if (!event.target.matches('.fixed-icon, .fixed-icon *')) {
+  //     const dropdown = document.querySelector('.dropdown-menu');
+  //     if (dropdown.style.display === 'block') {
+  //       dropdown.style.display = 'none';
+  //     }
+  //   }
+  // }
   </script>
   
 
